@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000';
+const API_BASE = '';
 
 const AVATAR_POOL = [
   { e: '🐺', bg: '#1e1b4b' }, { e: '🦊', bg: '#1f1007' },
