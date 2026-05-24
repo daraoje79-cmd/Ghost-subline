@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <link rel="manifest" href="/manifest.json"/>
+<meta name="theme-color" content="#2563eb"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="GhostChat"/>
+<link rel="apple-touch-icon" href="/images/dh.png"/>
   <meta name="google-site-verification" content="LhekBoqRsFU4MRz523yfBf56kWlToFTsEbBygHoiIRM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="GhostChat is a free anonymous chat platform where you can talk, vent, and connect with others without revealing your identity. No sign-up, no personal information, no trace left behind.
@@ -24,6 +31,11 @@ Anyone who needs a judgment-free space to talk — students, young adults, peopl
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="icon" href="images/96be583be9dc5fd027f41472a6ee1164-removebg-preview.png" type="image/x-icon"/>
 </head>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+</script>
 <body>
  
   <!-- SIDEBAR -->
